@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#elements-of-web">Veebis kasutatavad elemendid</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section id="intro">
+                <h1>See on minu pealkiri</h1>
+            </section>
+            <section id="elements-of-web">
+                <h2>Veebi moodustavad</h2>
+                <ol>
+                    <li>Tekst</li>
+                    <li>Pildid</li>
+                    <li>Helid</li>
+                    <li>Videod</li>
+                    <li>Animatsioonid</li>
+                </ol>
+                <h3>Mõisteid</h3>
+                <dl>
+                    <dt>Lumi</dt>
+                    <dd>Tuleks vaid kristalses olekus esinev vesi maha.</dd>
+                </dl>
+            </section>
+            <section id="table">
+                <h2>Tabel</h2>
+                <table border="1">
+                    <caption>
+                        Mitte midagi ütlev tabel
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Vasak</th>
+                            <th>Keskmine</th>
+                            <th>Parem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Esimene vasak</td>
+                            <td colspan="2">Esimene keskmine</td>
+                        </tr>
+                        <tr>
+                            <td>Teine vasak</td>
+                            <td rowspan="2">Teine keskmine</td>
+                            <td>Teine parem</td>
+                        </tr>
+                        <tr>
+                            <td>Kolmas vasak</td>
+                            <td>Kolmas parem</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Jalus</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="gaudeamus">
+                <h2>Gaudeamus</h2>
+                <p>
+                    keskaegne tekst, Christian Wilhelm Kindleben (töötlus) /
+                    üliõpilaslaul
+                </p>
+                <pre>
+:,: Gaudeamus igitur
+juvenes dum sumus! :,:
+Post jucundam juventutem,
+post molestam senectutem
+:,: nos habebit humus! :,:
+
+:,: Ubi sunt, qui ante nos
+in mundo fuere? :,:
+Vadite ad superos,
+transite ad inferos,
+:,: ubi iam fuere. :,:
+
+:,: Vita nostra brevis est,
+brevi finietur. :,:
+Venit mors velociter,
+rapit nos atrociter,
+:,: nemini parcetur. :,:
+
+:,: Vivat academia,
+vivant professores! :,:
+Vivat membrum quodlibet,
+vivant membra quaelibet,
+:,: semper sint in flore! :,:
+
+:,: Vivant omnes virgines
+faciles, formosae! :,:
+Vivant et mulieres
+tenerae, amabiles,
+:,: atque laboriosae! :,:
+
+:,: Vivat et respublica
+et qui illam regit! :,:
+Vivat nostra civitas,
+maecenatum caritas,
+:,: quae nos hic protegit! :,:
+
+:,: Pereat tristitia,
+pereant osores! :,:
+Pereat diabolus,
+quivis antiburschius,
+:,: atque irrisores! :,:
+                </pre>
+            </section>
+            <section id="media">
+                <h2>HTML 5 meediaelemendid</h2>
+                <h3>Pilt joonisena (figure)</h3>
+                <figure>
+                    <img
+                        src="./assets/tlu_41.jpg"
+                        alt="Tallinna nr. 3 tramm, taustal TLU Astra maja"
+                    />
+                    <figcaption>
+                        Tallinna nr. 3 tramm, taustal TLU Astra maja
+                    </figcaption>
+                </figure>
+                <h3>Kohanduv pilt (responsive)</h3>
+                <picture>
+                    <source
+                        media="(min-width: 1400px)"
+                        srcset="./assets/taevavaade_w1200.png"
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="./assets/taevavaade_w1000.png"
+                    />
+                    <source
+                        media="(min-width: 1000px)"
+                        srcset="./assets/taevavaade_w800.png"
+                    />
+                    <source
+                        media="(min-width: 800px)"
+                        srcset="./assets/taevavaade_w600.png"
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="./assets/taevavaade_w400.png"
+                    />
+                    <img src="./assets/taevavaade_w300.png" alt="Taevavaade" />
+                </picture>
+                <h3>Heli</h3>
+                <audio controls preload="none">
+                    <source
+                        src="./assets/Thomas_Edison_Mary_had_lamb.ogg"
+                        type="audio/ogg"
+                    />
+                    Kahjuks teie brauser ei toeta HTML5 audio elementi
+                </audio>
+                <h3>Video</h3>
+                <video
+                    controls
+                    width="800"
+                    poster="./assets/tlu_annab_hariduse.jpg"
+                >
+                    <source
+                        src="./assets/haridusvalgustab.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#table caption {
+    font-style: italic;
+}
+
+#table table {
+    border-collapse: collapse;
+}
