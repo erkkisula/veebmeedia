@@ -2,6 +2,35 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    background-image: url(./assets/tlu_h200.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 20px;
+    width: 1300px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #cc0000;
+}
+
+section {
+    background-color: rgba(255, 150, 255, 0.3);
+    background-image: url(./assets/top_left_01_transparent.png),
+        url(./assets/top_right_01_transparent.png),
+        url(./assets/bottom_left_01_transparent.png),
+        url(./assets/bottom_right_01_transparent.png);
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 70px;
 }
 
 #table caption {
