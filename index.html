@@ -10,7 +10,7 @@
     </head>
     <body>
         <nav>
-            <div class="nav-block" id="first"></div>
+            <div class="nav-block" id="first" onclick="colorClick()"></div>
             <div class="nav-block">
                 <a href="#elements-of-web">Veebis kasutatavad elemendid</a>
             </div>
@@ -22,6 +22,9 @@
             </div>
             <div class="nav-block">
                 <a href="#media">Veebi meedia</a>
+            </div>
+            <div class="nav-block" onclick="resetColor()">
+                <a href="javascript:void(0)">Reset</a>
             </div>
         </nav>
         <main>
@@ -175,8 +178,8 @@ quivis antiburschius,
                 <h3>Video</h3>
                 <video
                     controls
-                    width="800"
                     poster="./assets/tlu_annab_hariduse.jpg"
+                    class="responsive"
                 >
                     <source
                         src="./assets/haridusvalgustab.mp4"
@@ -190,32 +193,56 @@ quivis antiburschius,
                     Minu üks huvidest on motorsport.
                 </p>
                 <h3>Formula 1</h3>
-                <div class="rsp-img">
-                    <img src="./assets/f1-vettel-1.jpg" alt="Vormel 1 auto" />
-                    <figcaption>
-                        Ferrari #5 Sebastian Vettel, Barcelona 2019
-                    </figcaption>
-                </div>
+                <img
+                    src="./assets/f1-vettel-1.jpg"
+                    alt="Vormel 1 auto"
+                    class="responsive"
+                />
+                <figcaption>
+                    Ferrari #5 Sebastian Vettel, Barcelona 2019
+                </figcaption>
                 <p>
                     Vormel 1 on motorspordi üks tippalasid. Autod, mis seal
                     sõidavad, maksavad kümneid miljoneid ja nende juhid on
                     enamasti maailmas parimad.
                 </p>
-                <h3>WEC (FIA World Endurance Championship)</h3>
-                <div class="rsp-img">
-                    <img
-                        src="./assets/FIA-WEC-6-Heures-de-Spa.jpg"
-                        alt="2019 Spa 6 tundi"
-                    />
-                    <figcaption>
-                        2019 6 hours of Spa-Francorchamps
-                    </figcaption>
+                <h3>Tiimid aastal 2020</h3>
+                <div class="f1-teams-list">
+                    <ul>
+                        <li>Alfa Romeo Racing Orlen</li>
+                        <li>Scuderia AlphaTauri Honda</li>
+                        <li>Scuderia Ferrari Mission Winnow</li>
+                        <li>Haas F1 Team</li>
+                        <li>McLaren F1 Team</li>
+                        <li>Mercedes-AMG Petronas Formula One Team</li>
+                        <li>BWT Racing Point F1 Team</li>
+                        <li>Aston Martin Red Bull Racing</li>
+                        <li>Renault F1 Team</li>
+                        <li>ROKiT Williams Racing</li>
+                    </ul>
                 </div>
+
+                <h3>WEC (FIA World Endurance Championship)</h3>
+                <img
+                    src="./assets/FIA-WEC-6-Heures-de-Spa.jpg"
+                    alt="2019 Spa 6 tundi"
+                    class="responsive"
+                />
+                <figcaption>
+                    2019 6 hours of Spa-Francorchamps
+                </figcaption>
                 <p>
                     WEC (World Endurance Championship) on vastupidamissõidu
                     meistrivõistlused. Osavõtvad tiimid on jagatud nelja klassi:
                     GTE AM, GTE PRO, LMP2, LMP1. Igas klassis on erineva
-                    võimsuse ja ehitusega autod.
+                    võimsuse ja ehitusega autod. Võidusõidud kestavad 4 - 24
+                    tundi. Hooaeg algab septembris ja lõppeb juunis.
+                </p>
+                <h3>24 Hours of Le Mans</h3>
+                <p>
+                    24 Hours of Le Mans on üks motorspordi tähtsamatest
+                    sündmustest, mis toimub igal aastal alates 1923. aastast.
+                    Wec-s on see hooaja viimane võidusõit.
                 </p>
                 <iframe
                     width="800"
@@ -224,6 +251,7 @@ quivis antiburschius,
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
+                    class="responsive-yt"
                 ></iframe>
                 <figcaption>
                     2016 24 Hours of Le Mans
