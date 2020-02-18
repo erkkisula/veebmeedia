@@ -5,15 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./style.css" />
+        <script src="color.js"></script>
         <title>Document</title>
     </head>
     <body>
         <nav>
-            <ul>
-                <li>
-                    <a href="#elements-of-web">Veebis kasutatavad elemendid</a>
-                </li>
-            </ul>
+            <div class="nav-block" id="first"></div>
+            <div class="nav-block">
+                <a href="#elements-of-web">Veebis kasutatavad elemendid</a>
+            </div>
+            <div class="nav-block">
+                <a href="#table">Tabel</a>
+            </div>
+            <div class="nav-block">
+                <a href="#gaudeamus">Gaudeamus</a>
+            </div>
+            <div class="nav-block">
+                <a href="#media">Veebi meedia</a>
+            </div>
         </nav>
         <main>
             <section id="intro">
@@ -174,6 +183,51 @@ quivis antiburschius,
                         type="video/mp4"
                     />
                 </video>
+            </section>
+            <section id="motorsport">
+                <h2>Motorsport</h2>
+                <p>
+                    Minu üks huvidest on motorsport.
+                </p>
+                <h3>Formula 1</h3>
+                <div class="rsp-img">
+                    <img src="./assets/f1-vettel-1.jpg" alt="Vormel 1 auto" />
+                    <figcaption>
+                        Ferrari #5 Sebastian Vettel, Barcelona 2019
+                    </figcaption>
+                </div>
+                <p>
+                    Vormel 1 on motorspordi üks tippalasid. Autod, mis seal
+                    sõidavad, maksavad kümneid miljoneid ja nende juhid on
+                    enamasti maailmas parimad.
+                </p>
+                <h3>WEC (FIA World Endurance Championship)</h3>
+                <div class="rsp-img">
+                    <img
+                        src="./assets/FIA-WEC-6-Heures-de-Spa.jpg"
+                        alt="2019 Spa 6 tundi"
+                    />
+                    <figcaption>
+                        2019 6 hours of Spa-Francorchamps
+                    </figcaption>
+                </div>
+                <p>
+                    WEC (World Endurance Championship) on vastupidamissõidu
+                    meistrivõistlused. Osavõtvad tiimid on jagatud nelja klassi:
+                    GTE AM, GTE PRO, LMP2, LMP1. Igas klassis on erineva
+                    võimsuse ja ehitusega autod.
+                </p>
+                <iframe
+                    width="800"
+                    height="450"
+                    src="https://www.youtube.com/embed/Tg-SU54QQKM"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <figcaption>
+                    2016 24 Hours of Le Mans
+                </figcaption>
             </section>
         </main>
     </body>

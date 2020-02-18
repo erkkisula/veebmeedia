@@ -1,7 +1,10 @@
+let block = document.getElementById('first');
+
 setInterval(function() {
     const r = Math.round(Math.random() * 255);
     const g = Math.round(Math.random() * 255);
     const b = Math.round(Math.random() * 255);
 
-    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-}, 200);
+    //document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    first.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+}, 1000);
