@@ -62,12 +62,26 @@ const movePendulum = () => {
 };
 
 let video_deg = 0;
+let rotating = true;
+let vid = document.getElementById('rot-video');
 
 const rotateVideo = () => {
-    vid = document.getElementById('rot-video');
-    vid.style.transform = 'rotate(' + video_deg + 'deg)';
-    video_deg++;
+    if (rotating) {
+        vid.style.transform = 'rotate(' + video_deg + 'deg)';
+        video_deg++;
+    }
 };
+
+const toggleRotate = () => {
+    rotating = !rotating;
+    console.log('Kek');
+};
+
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 80) {
+        toggleRotate();
+    }
+});
 
 // Setup
 init();
