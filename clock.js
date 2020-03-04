@@ -61,10 +61,18 @@ const movePendulum = () => {
     }
 };
 
-//Setup
+let video_deg = 0;
+
+const rotateVideo = () => {
+    vid = document.getElementById('rot-video');
+    vid.style.transform = 'rotate(' + video_deg + 'deg)';
+    video_deg++;
+};
+
+// Setup
 init();
 
-//Running code
+// Running code
 setInterval(function() {
     let d = new Date();
     rotateHand(SEC_HAND, SEC_MIN_DEGREE * d.getSeconds());
@@ -73,4 +81,9 @@ setInterval(function() {
 
 setInterval(function() {
     movePendulum();
+}, 20);
+
+// Video rotate
+setInterval(() => {
+    rotateVideo();
 }, 20);
