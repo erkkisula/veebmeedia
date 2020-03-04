@@ -37,6 +37,11 @@
                     Motorsport
                 </div>
             </a>
+            <a href="#clock">
+                <div class="nav-block">
+                    Kell
+                </div>
+            </a>
             <div class="nav-block" onclick="resetColor()">
                 Reset
             </div>
@@ -271,6 +276,18 @@ quivis antiburschius,
                     2016 24 Hours of Le Mans
                 </figcaption>
             </section>
+            <section id="clock">
+                <div class="clock-box frame">
+                    <div class="clock-face">
+                        <div class="clock-sec hand" id="sec"></div>
+                        <div class="clock-minute hand" id="minute"></div>
+                        <div class="clock-hour hand" id="hour"></div>
+                    </div>
+                    <div class="clock-pendulum" id="pendulum"></div>
+                    <div class="clock-frame frame"></div>
+                </div>
+            </section>
         </main>
+        <script src="clock.js"></script>
     </body>
 </html>

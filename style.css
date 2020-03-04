@@ -101,3 +101,66 @@ nav a {
     background-color: black;
     width: 38px;
 }
+
+/** Kell **/
+
+.clock-box {
+    position: relative;
+    background-image: url('./assets/clock_box.png');
+}
+
+.frame {
+    width: 554px;
+    height: 945px;
+}
+
+.clock-face {
+    position: relative;
+    background-image: url('./assets/clock_face.png');
+    width: 369px;
+    height: 369px;
+    top: 89px;
+    left: 92px;
+    z-index: 100;
+}
+
+.hand {
+    position: absolute;
+    width: 54px;
+    height: 200px;
+    left: 50%;
+    top: 8px;
+    transform-origin: 50% 177px;
+    transform: translate(-50%);
+}
+
+.clock-sec {
+    background-image: url('./assets/second_hand.png');
+}
+
+.clock-minute {
+    background-image: url('./assets/minute_hand.png');
+}
+
+.clock-hour {
+    background-image: url('./assets/hour_hand.png');
+}
+
+.clock-pendulum {
+    position: absolute;
+    background-image: url('./assets/clock_pendulum.png');
+    width: 166px;
+    height: 388px;
+    top: 40%;
+    left: 50%;
+    transform-origin: 50% 0%;
+    transform: translate(-50%);
+}
+
+.clock-frame {
+    position: absolute;
+    background-image: url('./assets/clock_frame.png');
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
