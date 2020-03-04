@@ -1,4 +1,3 @@
-let block = document.getElementById('first');
 let isScreenFlashing = false;
 
 setInterval(function() {
