@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="anims.css" />
         <script src="color.js"></script>
         <title>Document</title>
     </head>
@@ -185,7 +186,11 @@ quivis antiburschius,
                         media="(min-width: 600px)"
                         srcset="./assets/taevavaade_w400.png"
                     />
-                    <img src="./assets/taevavaade_w300.png" alt="Taevavaade" />
+                    <img
+                        src="./assets/taevavaade_w300.png"
+                        alt="Taevavaade"
+                        class="zoomer"
+                    />
                 </picture>
                 <h3>Heli</h3>
                 <audio controls preload="none">
@@ -287,6 +292,16 @@ quivis antiburschius,
                     </div>
                     <div class="clock-pendulum" id="pendulum"></div>
                     <div class="clock-frame frame"></div>
+                </div>
+            </section>
+            <section id="animation">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="kanye-holder">
+                            <div class="kanye-head"></div>
+                        </div>
+                        <div class="terrain"></div>
+                    </div>
                 </div>
             </section>
         </main>

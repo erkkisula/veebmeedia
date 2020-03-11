@@ -12,7 +12,7 @@ let minute = 0;
 let hour = 0;
 
 //Pendulum
-let pendulumDeg = 0;
+let pendulumDeg = -30;
 let direction = 0;
 
 const rotateHand = (element, deg) => {
@@ -94,8 +94,8 @@ setInterval(function() {
 }, 100);
 
 setInterval(function() {
-    movePendulum();
-}, 20);
+    //movePendulum();
+}, 17);
 
 // Video rotate
 setInterval(() => {
