@@ -8,6 +8,11 @@ window.onload = function() {
     /* let name = window.prompt('Mis su nimi on?');
     putName(name); */
     randomImg();
+    document.getElementById('tlu-pic').addEventListener('click', randomImg);
+    // eslint-disable-next-line no-undef
+    prepareMusic();
+    // eslint-disable-next-line no-undef
+    prepareTellTime();
 };
 
 const putName = name => {

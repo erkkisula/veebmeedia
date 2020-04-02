@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="anims.css" />
         <script src="color.js"></script>
         <script src="script.js" defer></script>
+        <script src="music.js"></script>
         <title>Document</title>
     </head>
     <body>
@@ -47,6 +48,11 @@
             <a href="#animation">
                 <div class="nav-block">
                     Multikas
+                </div>
+            </a>
+            <a href="#music">
+                <div class="nav-block">
+                    Muusika
                 </div>
             </a>
             <div class="nav-block" onclick="resetColor()">
@@ -305,6 +311,7 @@ quivis antiburschius,
                     <div class="clock-pendulum" id="pendulum"></div>
                     <div class="clock-frame frame"></div>
                 </div>
+                <button id="speak-btn">Ütle kellaaeg!</button>
             </section>
             <section id="animation">
                 <h2>Cartoon</h2>
@@ -316,6 +323,36 @@ quivis antiburschius,
                         <div class="terrain"></div>
                     </div>
                 </div>
+            </section>
+            <section id="music">
+                <h2>Muusika</h2>
+                <button id="music-btn">Oota</button>
+                <br />
+                <p>Muusika positsioon: <span id="music-pos">0</span></p>
+                <br />
+                <button id="forward-btn">Fast forward</button>
+                <br />
+                <label>Helitugeveus:</label>
+                <input
+                    type="range"
+                    name="volume-slider"
+                    id="volume-slider"
+                    min="0"
+                    max="1"
+                    value="0.7"
+                    step="0.1"
+                />
+                <br />
+                <label>Esituskiirus:</label>
+                <input
+                    type="range"
+                    name="speed-slider"
+                    id="speed-slider"
+                    min="0.25"
+                    max="2"
+                    value="1"
+                    step="0.25"
+                />
             </section>
         </main>
         <script src="clock.js"></script>
