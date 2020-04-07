@@ -73,6 +73,7 @@ const prepareTellTime = () => {
 };
 
 const tellTime = () => {
+    document.getElementById('speak-btn').disabled = true;
     let d = new Date();
     if (d.getMinutes() == 0) {
         timeWords.push('kellon');
@@ -102,6 +103,7 @@ const speakTime = () => {
         timeSpeaker.removeEventListener('ended', speakTime);
         timeWords = [];
         index = 0;
+        document.getElementById('speak-btn').disabled = false;
     }
 };
 
