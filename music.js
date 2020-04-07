@@ -65,6 +65,7 @@ const showInfo = e => {
 // Kell
 const clockSoundsURL = './assets/clocksounds/';
 const timeSpeaker = new Audio();
+const clockAudio = new Audio();
 let index = 0;
 let timeWords = [];
 
@@ -125,3 +126,17 @@ const numToWords = val => {
         }
     }
 };
+
+const bingBong = () => {
+    let d = new Date();
+    if (document.getElementById('chk-sound').checked == true) {
+        if (d.getMinutes() == 0 && d.getSeconds() == 0) {
+            clockAudio.src = clockSoundsURL + 'kell.mp3';
+            clockAudio.play();
+        }
+    }
+};
+
+setInterval(() => {
+    bingBong();
+}, 1000);
