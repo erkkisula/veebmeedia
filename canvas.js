@@ -69,18 +69,22 @@ function drawChimney() {
     drawLine(590, 150, 590, 175, "#000000", 4);
 }
 
+// Setups
 drawRectangleFill(0, 0, 1000, 600, skyGradient);
 drawRectangleFill(0, 550, 1000, 50, "green");
 drawRectangleFill(50, 200, 700, 350, "gray");
 drawChimney();
 fillTriangle(50, 200, 375, 100, 750, 200, "red");
+// Door
 drawRectangleStroke(50, 200, 700, 350, "#000000", 4);
 drawRectangleFill(100, 270, 150, 280, "brown");
 drawRectangleStroke(100, 270, 150, 280, "#000000", 4);
 drawRectangleFill(150, 300, 50, 100, "lightblue");
 drawRectangleStroke(150, 300, 50, 100, "#000000", 4);
+// Window
 drawRectangleFill(300, 270, 200, 150, "lightblue");
 drawRectangleStroke(300, 270, 200, 150, "#000000", 4);
+// Details
 drawLine(400, 270, 400, 420, "#000000", 4);
 drawLine(300, 345, 500, 345, "#000000", 4);
 drawLine(50, 200, 375, 100, "#000000", 4);
@@ -90,8 +94,14 @@ drawLine(50, 100, 185, 100, "#000000", 4);
 drawLine(50, 80, 50, 120, "#000000", 4);
 drawLine(100, 80, 70, 120, "#000000", 4);
 drawLine(170, 80, 160, 120, "#000000", 4);
+// Tree
 drawRectangleFill(850, 400, 50, 150, "brown");
 drawRectangleStroke(850, 400, 50, 150, "#000000", 4);
 drawArcFill(875, 375, 100, 0, 2 * Math.PI, "green", false);
 drawArcStroke(875, 375, 100, 0, 2 * Math.PI, "#000000", false);
 drawArcFill(1000, 0, 100, 0, 2 * Math.PI, "yellow", false);
+// Birds
+drawArcStroke(700, 100, 25, 0, 1.5 * Math.PI, "#000000", 4, true);
+drawArcStroke(750, 100, 25, 1 * Math.PI, 1.5 * Math.PI, "#000000", 4, false);
+drawArcStroke(760, 70, 15, 0, 1.5 * Math.PI, "#000000", 4, true);
+drawArcStroke(790, 70, 15, 1 * Math.PI, 1.5 * Math.PI, "#000000", 4, false);
