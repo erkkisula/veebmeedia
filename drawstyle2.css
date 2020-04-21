@@ -1,0 +1,12 @@
+main {
+    padding: 20px;
+}
+
+.canvas {
+    border: 4px solid #000000;
+    transition: all 0.2s;
+}
+
+.canvas:hover {
+    border: 4px solid rgb(0, 228, 0);
+}

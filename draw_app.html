@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+    <head>
+        <meta charset="utf-8" />
+        <title>Drawing</title>
+        <link rel="stylesheet" type="text/css" href="drawstyle2.css" />
+        <script src="drawing_app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="drawing" class="drawingArea">
+                <h1>Drawing</h1>
+                <canvas id="canvas" class="canvas" width="1000" height="600"
+                    >Kahjuks Teie brauser ei toeta HTML5 canvas elementi</canvas
+                >
+                <br />
+                <input type="color" id="colorPicker" />
+                <br />
+                <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    value="1"
+                    class="slider"
+                    id="linewidth-selector"
+                />
+                <span>Joone paksus</span>
+                <br />
+                <input
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.1"
+                    value="1"
+                    class="slider"
+                    id="alpha-selector"
+                />
+                <span>Joone läbipaistvus</span>
+                <br />
+                <input type="checkbox" name="eraser" id="eraser" />
+                <span>Kustutamise režiim</span>
+                <br />
+                <button id="clear-canvas" class="clear-canvas">
+                    Puhasta kanvas
+                </button>
+            </section>
+        </main>
+    </body>
+</html>
